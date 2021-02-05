@@ -1,0 +1,35 @@
+{
+  "name": "facebook-oauth2-nodejs",
+  "version": "1.0.0",
+  "description": "Node.js OAuth 2.0 Facebook Login",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HRS0986/facebook-oauth2-nodejs.git"
+  },
+  "keywords": [
+    "oauth2",
+    "nodejs",
+    "facebook-login"
+  ],
+  "author": "Hirusha Fernando",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HRS0986/facebook-oauth2-nodejs/issues"
+  },
+  "homepage": "https://github.com/HRS0986/facebook-oauth2-nodejs#readme",
+  "scripts": {
+    "start": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.5",
+    "express": "^4.16.4",
+    "http-errors": "^1.6.3",
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "morgan": "^1.9.1"
+  }
+}

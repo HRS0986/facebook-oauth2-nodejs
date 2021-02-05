@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />   
+  </head>
+  <body>
+    <script>
+      window.fbAsyncInit = function () {
+        FB.init({
+          appId: "170377577872522",
+          cookie: true,
+          xfbml: true,
+          version: "v9.0",
+        });
+
+        FB.AppEvents.logPageView();        
+      };
+
+      (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {
+          return;
+        }
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, "script", "facebook-jssdk");
+    </script>
+
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+
+    <button class="fb" id="fb" onclick="fbLogin()"><i class="fab fa-lg fa-facebook"></i> Login With Facebook</button>
+
+    <button class="fb" style="display: none;" id="fbout" onclick="fbLogout()"> Logout </button>
+
+    <h2 style="display: none;" id="status">You are logged in</h2>
+
+    <h3 style="display: none;" id="name">Name : </h3>
+    <h3 style="display: none;" id="email">Email : </h3>
+    <script src="javascripts/index.js"></script>
+
+  </body>
+</html>

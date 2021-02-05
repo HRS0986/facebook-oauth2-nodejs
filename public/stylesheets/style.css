@@ -1,0 +1,23 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.fb {
+    font-family: Lucida Grande, Helvetica Neue, Helvetica, Arial, sans-serif;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bolder;
+    padding: 13px 30px 15px 30px;
+    background: #3A5A97;
+    color: #fff;   
+    text-decoration: none;
+    line-height: 1;
+    position: relative;
+    border-radius: 5px;
+    outline: none;
+}
